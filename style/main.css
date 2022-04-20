@@ -1,0 +1,139 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*elementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+.principais-escolhas{
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.linha{
+    width: 100%;
+    border: 2px solid black;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/1.Senhor-dos-aneis.jpg');
+
+   
+    height: 40rem;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+   
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: #141414;
+  
+    
+}
+
+.botao a{
+    text-decoration: none;
+    color: white;
+}
+
+.botao a:hover{
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+.box-filme:hover{
+    top: -4px;
+    border:2px  solid #a8a4a5;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
